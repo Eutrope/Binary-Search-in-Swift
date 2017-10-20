@@ -26,12 +26,12 @@ func binarySearch(searchValue: Int, array: [Int]) -> Bool{
             return true
         }
 		
-		// Ignore right half is x is smaller
+	// Ignore right half if searchValue is smaller
         if searchValue < middleValue {
             rightIndex = middleIndex - 1
         }
 			
-		// Ignore left half is x is greater
+	// Ignore left half if searchValue is greater
         else {
             leftIndex = middleIndex + 1
         }
